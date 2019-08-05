@@ -1,6 +1,6 @@
-import User from "./../models/User"
-import bcrypt from "bcrypt"
-import jwt from "jsonwebtoken"
+import User from './../models/User'
+import bcrypt from 'bcrypt'
+import jwt from 'jsonwebtoken'
 
 export default {
   singin: (req, res) => {
@@ -24,7 +24,7 @@ export default {
               success: true,
               message: 'Token obtenido correctamente.',
               token: token
-            });
+            })
           }
         }
       })
