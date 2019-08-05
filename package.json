@@ -2,10 +2,10 @@
   "name": "siteserver",
   "version": "1.0.0",
   "description": "Server for \"static\" sites of info about business.",
-  "main": "./src/bin/www",
+  "main": "./src/bin/www.js",
   "scripts": {
-    "start": "nodemon -r esm ./src/bin/www",
-    "serve": "node -r esm ./src/bin/www"
+    "start": "nodemon -r esm ./src/bin/www.js",
+    "serve": "node -r esm ./src/bin/www.js"
   },
   "author": "Alberto Caro Navarro",
   "license": "MIT",

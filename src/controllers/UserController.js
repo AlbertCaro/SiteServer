@@ -8,7 +8,9 @@ export default {
 
       const user = new User({
         username: req.body.username,
-        password: password
+        password: password,
+        created_at: Date.now(),
+        updated_at: Date.now()
       })
 
       const result = await user.save()
@@ -24,8 +26,8 @@ export default {
       const password = bcrypt.hashSync(req.body.password, req.app.get('salt'))
 
       const user = {
-        name: req.body.name,
-        password: password
+        password: password,
+        updated_at: Date.now()
       }
 
       const result = await User.findByIdAndUpdate(req.params.id, user, { new: true })

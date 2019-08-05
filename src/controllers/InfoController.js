@@ -4,7 +4,9 @@ export default {
   create: async (req, res) => {
     try {
       const info = new Info({
-        name: req.body.name
+        name: req.body.name,
+        created_at: Date.now(),
+        updated_at: Date.now()
       })
 
       const result = await info.save()
@@ -18,7 +20,8 @@ export default {
   update: async (req, res) => {
     try {
       const info = {
-        name: req.body.name
+        name: req.body.name,
+        updated_at: Date.now()
       }
 
       const result = await Info.findByIdAndUpdate(req.params.id, info, { new: true })
