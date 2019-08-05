@@ -1,0 +1,16 @@
+import app from "../app"
+import mongoose from "mongoose"
+import config from "./../config"
+
+app.listen(3000, () => {
+  console.log('Sistema de información')
+})
+
+mongoose.connect(config.database, { 
+  useNewUrlParser: true 
+}).then(() => {
+  console.log('Conectado correctamente.')
+}).catch(error => {
+  console.error('Error mongo: ', error)
+})
+
