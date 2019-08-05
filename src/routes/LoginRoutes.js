@@ -1,10 +1,9 @@
-import express from "express"
-import Controller from "./../controllers/LoginController"
-import JwtMiddleware from "./../middlewares/JwtMiddleware"
+import express from 'express'
+import Controller from './../controllers/LoginController'
 
 const router = express.Router()
 
-const api_name = "/api/authenticate"
+const api_name = '/api/authenticate'
 
 router.post(api_name, Controller.singin)
 

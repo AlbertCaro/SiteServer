@@ -1,11 +1,11 @@
-import express from "express"
-import morgan from "morgan"
-import cors from "cors"
-import InfoRoutes from "./routes/InfoRoutes"
-import UserRoutes from "./routes/UserRoutes"
-import LoginRoutes from "./routes/LoginRoutes"
-import HomeRoutes from "./routes/HomeRoutes"
-import config from "./config"
+import express from 'express'
+import morgan from 'morgan'
+import cors from 'cors'
+import InfoRoutes from './routes/InfoRoutes'
+import UserRoutes from './routes/UserRoutes'
+import LoginRoutes from './routes/LoginRoutes'
+import HomeRoutes from './routes/HomeRoutes'
+import config from './config'
 
 const app = express()
 
